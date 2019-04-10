@@ -27,15 +27,15 @@ require_once('db/connection.php');
     <form action="index.php" method="post">
       <div class="form-group">
         <label for="name">Nama Lengkap : </label>
-        <input type="text" name="name" class="form-control" placeholder="Silahkan masukan nama lengkap anda" id="name">
+        <input type="text" name="name" class="form-control" placeholder="Silahkan masukan nama lengkap anda" id="name" required>
       </div>
       <div class="form-group">
         <label for="email">Email : </label>
-        <input type="email" name="email" class="form-control" placeholder="Silahkan masukan email valid anda" id="email">
+        <input type="email" name="email" class="form-control" placeholder="Silahkan masukan email valid anda" id="email" required>
       </div>
       <div class="form-group">
         <label for="location">Alamat : </label>
-        <textarea name="location" name="location" id="location" class="form-control" cols="30" rows="5" placeholder="Silahan masukan alamat anda">
+        <textarea name="location" name="location" id="location" class="form-control" cols="30" rows="5" placeholder="Silahan masukan alamat anda" required>
         </textarea>
       </div>
       <input class="btn btn-info" name="clear" type="reset" value="Bersihkan input">
